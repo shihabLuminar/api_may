@@ -1,4 +1,5 @@
 import 'package:api_session2/controller/home_screen_controller.dart';
+import 'package:api_session2/controller/product_detials_screen_controller.dart';
 import 'package:api_session2/view/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -14,9 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
+        ChangeNotifierProvider(create: (context) => HomeScreenController()),
         ChangeNotifierProvider(
-          create: (context) => HomeScreenController(),
-        )
+            create: (context) => ProductDetialsScreenController()),
       ],
       child: MaterialApp(
         home: HomeScreen(),
