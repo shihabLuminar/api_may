@@ -1,5 +1,6 @@
 import 'package:api_session2/controller/home_screen_controller.dart';
 import 'package:api_session2/controller/product_detials_screen_controller.dart';
+import 'package:api_session2/controller/search_screen_controller.dart';
 import 'package:api_session2/view/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
